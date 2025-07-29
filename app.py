@@ -8,26 +8,26 @@ app = Flask(__name__)
 
 # MySQL config
 db_config = {
-    "host": "localhost",
-    "user": "root",
-    "password": "password123",
-    "database": "ajazz_products"
+    "host": "",
+    "user": "",
+    "password": "",
+    "database": ""
 }
 
 # Local AI API config
-AI_API_URL = "http://localhost:1234/v1/chat/completions"
+AI_API_URL = ""
 AI_MODEL = "falcon-h1-7b-instruct"
 
 def start_localtunnel():
     print("\n🚀 Starting LocalTunnel...")
     subprocess.Popen(
-        ["lt", "--port", "5000", "--subdomain", "insta947x-donkey-haxx-flipflop-b4nanalord-neverguess567"],
+        ["lt", "--port", "5000", "--subdomain", ""],
         shell=True,
         stdout=subprocess.DEVNULL,
         stderr=subprocess.STDOUT
     )
     time.sleep(4)
-    print("✅ Public URL: https://insta947x-donkey-haxx-flipflop-b4nanalord-neverguess567.loca.lt\n")
+    print("✅ Public URL: ")
 
 def ask_ai(messages):
     response = requests.post(AI_API_URL, json={
