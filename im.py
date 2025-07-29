@@ -4,7 +4,7 @@ import requests
 import threading
 import time
 
-SERVER_URL = "https://insta947x-donkey-haxx-flipflop-b4nanalord-neverguess567.loca.lt/query"
+SERVER_URL = ""
 
 last_query = None
 
